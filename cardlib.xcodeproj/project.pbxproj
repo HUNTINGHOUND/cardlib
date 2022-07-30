@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9008A7EF288E154100563DA5 /* cardmanager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9008A7E3288E154100563DA5 /* cardmanager.hpp */; };
+		9008A7F3288E154100563DA5 /* encoder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9008A7E7288E154100563DA5 /* encoder.hpp */; };
+		9008A7F4288E154100563DA5 /* cardgen.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9008A7E8288E154100563DA5 /* cardgen.hpp */; };
+		9008A7F7288E154100563DA5 /* decoder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9008A7EB288E154100563DA5 /* decoder.hpp */; };
+		9008A7F8288E154100563DA5 /* card.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9008A7EC288E154100563DA5 /* card.hpp */; };
+		9008A819288F605600563DA5 /* testpoker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9008A80D288F600200563DA5 /* testpoker.cpp */; };
+		9080BE1B2894C433008D1939 /* multithreadpokertest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9008A81A2894C22300563DA5 /* multithreadpokertest.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9008A810288F604F00563DA5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		9080BE122894C428008D1939 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9008A7CE288E116100563DA5 /* libcardlib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcardlib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		9008A7E3288E154100563DA5 /* cardmanager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cardmanager.hpp; sourceTree = "<group>"; };
+		9008A7E7288E154100563DA5 /* encoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = encoder.hpp; sourceTree = "<group>"; };
+		9008A7E8288E154100563DA5 /* cardgen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cardgen.hpp; sourceTree = "<group>"; };
+		9008A7EB288E154100563DA5 /* decoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = decoder.hpp; sourceTree = "<group>"; };
+		9008A7EC288E154100563DA5 /* card.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = card.hpp; sourceTree = "<group>"; };
+		9008A80B288E633100563DA5 /* poker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = poker.hpp; sourceTree = "<group>"; };
+		9008A80D288F600200563DA5 /* testpoker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testpoker.cpp; sourceTree = "<group>"; };
+		9008A812288F604F00563DA5 /* cardlibtestpoker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cardlibtestpoker; sourceTree = BUILT_PRODUCTS_DIR; };
+		9008A81A2894C22300563DA5 /* multithreadpokertest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = multithreadpokertest.cpp; sourceTree = "<group>"; };
+		9080BE142894C428008D1939 /* cardlibtestthread */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cardlibtestthread; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9008A7CC288E116100563DA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9008A80F288F604F00563DA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9080BE112894C428008D1939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9008A7C5288E116100563DA5 = {
+			isa = PBXGroup;
+			children = (
+				9008A7D0288E116100563DA5 /* cardlib */,
+				9008A7CF288E116100563DA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9008A7CF288E116100563DA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9008A7CE288E116100563DA5 /* libcardlib.dylib */,
+				9008A812288F604F00563DA5 /* cardlibtestpoker */,
+				9080BE142894C428008D1939 /* cardlibtestthread */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9008A7D0288E116100563DA5 /* cardlib */ = {
+			isa = PBXGroup;
+			children = (
+				9008A80C288F5FE700563DA5 /* test */,
+				9008A7E1288E14AD00563DA5 /* include */,
+			);
+			path = cardlib;
+			sourceTree = "<group>";
+		};
+		9008A7E1288E14AD00563DA5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9008A7EC288E154100563DA5 /* card.hpp */,
+				9008A7E8288E154100563DA5 /* cardgen.hpp */,
+				9008A7E3288E154100563DA5 /* cardmanager.hpp */,
+				9008A7EB288E154100563DA5 /* decoder.hpp */,
+				9008A7E7288E154100563DA5 /* encoder.hpp */,
+				9008A80B288E633100563DA5 /* poker.hpp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9008A80C288F5FE700563DA5 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				9008A80D288F600200563DA5 /* testpoker.cpp */,
+				9008A81A2894C22300563DA5 /* multithreadpokertest.cpp */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9008A7CA288E116100563DA5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9008A7F8288E154100563DA5 /* card.hpp in Headers */,
+				9008A7F4288E154100563DA5 /* cardgen.hpp in Headers */,
+				9008A7EF288E154100563DA5 /* cardmanager.hpp in Headers */,
+				9008A7F7288E154100563DA5 /* decoder.hpp in Headers */,
+				9008A7F3288E154100563DA5 /* encoder.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9008A7CD288E116100563DA5 /* cardlib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9008A7D9288E116100563DA5 /* Build configuration list for PBXNativeTarget "cardlib" */;
+			buildPhases = (
+				9008A7CA288E116100563DA5 /* Headers */,
+				9008A7CB288E116100563DA5 /* Sources */,
+				9008A7CC288E116100563DA5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cardlib;
+			productName = cardlib;
+			productReference = 9008A7CE288E116100563DA5 /* libcardlib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		9008A811288F604F00563DA5 /* cardlibtestpoker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9008A816288F604F00563DA5 /* Build configuration list for PBXNativeTarget "cardlibtestpoker" */;
+			buildPhases = (
+				9008A80E288F604F00563DA5 /* Sources */,
+				9008A80F288F604F00563DA5 /* Frameworks */,
+				9008A810288F604F00563DA5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cardlibtestpoker;
+			productName = cardlibtestpoker;
+			productReference = 9008A812288F604F00563DA5 /* cardlibtestpoker */;
+			productType = "com.apple.product-type.tool";
+		};
+		9080BE132894C428008D1939 /* cardlibtestthread */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9080BE182894C428008D1939 /* Build configuration list for PBXNativeTarget "cardlibtestthread" */;
+			buildPhases = (
+				9080BE102894C428008D1939 /* Sources */,
+				9080BE112894C428008D1939 /* Frameworks */,
+				9080BE122894C428008D1939 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cardlibtestthread;
+			productName = cardlibtestthread;
+			productReference = 9080BE142894C428008D1939 /* cardlibtestthread */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9008A7C6288E116100563DA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					9008A7CD288E116100563DA5 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					9008A811288F604F00563DA5 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					9080BE132894C428008D1939 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 9008A7C9288E116100563DA5 /* Build configuration list for PBXProject "cardlib" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9008A7C5288E116100563DA5;
+			productRefGroup = 9008A7CF288E116100563DA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9008A7CD288E116100563DA5 /* cardlib */,
+				9008A811288F604F00563DA5 /* cardlibtestpoker */,
+				9080BE132894C428008D1939 /* cardlibtestthread */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9008A7CB288E116100563DA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9008A80E288F604F00563DA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9008A819288F605600563DA5 /* testpoker.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9080BE102894C428008D1939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9080BE1B2894C433008D1939 /* multithreadpokertest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9008A7D7288E116100563DA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9008A7D8288E116100563DA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9008A7DA288E116100563DA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9008A7DB288E116100563DA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9008A817288F604F00563DA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9008A818288F604F00563DA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9080BE192894C428008D1939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9080BE1A2894C428008D1939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9008A7C9288E116100563DA5 /* Build configuration list for PBXProject "cardlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9008A7D7288E116100563DA5 /* Debug */,
+				9008A7D8288E116100563DA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9008A7D9288E116100563DA5 /* Build configuration list for PBXNativeTarget "cardlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9008A7DA288E116100563DA5 /* Debug */,
+				9008A7DB288E116100563DA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9008A816288F604F00563DA5 /* Build configuration list for PBXNativeTarget "cardlibtestpoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9008A817288F604F00563DA5 /* Debug */,
+				9008A818288F604F00563DA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9080BE182894C428008D1939 /* Build configuration list for PBXNativeTarget "cardlibtestthread" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9080BE192894C428008D1939 /* Debug */,
+				9080BE1A2894C428008D1939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9008A7C6288E116100563DA5 /* Project object */;
+}
